@@ -1,0 +1,1 @@
+const assertEquals = (a,b) => a === b;
