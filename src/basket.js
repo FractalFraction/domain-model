@@ -6,6 +6,19 @@ class Basket {
         this._capacity = capacity;
     }
 
-    
+    // Getters
+    get capacity () {
+        return this._capacity;
+    }
+
+    get items () {
+        return this._items;
+    }
+
+    //Methods
+
+    addItem () {
+        return this.items.length < this.capacity ? this.items.push(newItem) : "Sorry,the basket is full."
+    }
 
 }
