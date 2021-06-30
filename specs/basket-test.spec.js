@@ -1,4 +1,5 @@
 assertEquals = require("../src/testing-framework.js");
+assertEquals = requrie("../src/basket.js");
 
 // Setup 
 // Check if the basket object is set up
@@ -25,4 +26,13 @@ myBasket.isFull();
 // Return Boolean 
 
 // Verify
-console.log(assertEquals(myBasket.getCapacity())
+console.log(assertEquals(myBasket.getCapacity(),10))
+// Output: true
+console.log(assertEquals(myBasket.getItems(), items))
+// Output: true
+console.log(assertEquals(myBasket.addItem(),`Added ${newItem} to your basket.`))
+// Output: true
+console.log(assertEquals(myBasket.getItems(), ['chocolate', 'banana', 'peanut butter','bread']))
+//Output: true 
+console.log(myBasket.isFull(),'false');
+// Output: true 
